@@ -40,4 +40,4 @@ cd your-portfolio
 
 npm install
 
-npm start
+npx react-scripts start
