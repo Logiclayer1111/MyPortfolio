@@ -168,37 +168,37 @@ const Home = () => {
                 className="w-4/5 h-full object-cover rounded-full relative z-10"
               />
             </MovingBorder>
+          </div>
         </div>
-        
+
         {/* Resume Modal */}
         {showModal && (
           <>
             <div 
-              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
-              onClick={(e) => {
-                if (e.target === e.currentTarget) setShowModal(false);
-              }}
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+              onClick={(e) => e.currentTarget === e.target && setShowModal(false)}
             >
-              <div className="bg-gray-900/95 border border-gray-700 rounded-3xl p-8 w-full max-w-6xl max-h-[90vh] relative shadow-2xl mx-4">
+              <div className="bg-gray-900 border border-gray-700 rounded-3xl p-8 max-w-6xl max-h-[90vh] w-full mx-4 relative shadow-2xl overflow-hidden">
                 <button
+                  className="absolute top-4 right-4 text-3xl text-gray-400 hover:text-white p-2 rounded-full hover:bg-gray-800/50 transition-colors z-10"
                   onClick={() => setShowModal(false)}
-                  className="absolute -top-12 right-0 text-gray-300 hover:text-white text-3xl font-bold p-2 hover:bg-gray-800/50 rounded-full transition-all z-10"
+                  aria-label="Close modal"
                 >
                   ×
                 </button>
-                <div id="resume-content" className="pb-20">
+                <div id="resume-content" className="max-h-[70vh] overflow-y-auto pb-20">
                   <Resume />
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4 mt-8 pt-8 border-t border-gray-700 justify-center">
+                <div className="sticky bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/95 to-transparent pt-8 mt-8 pb-8 border-t border-gray-700 flex gap-4 justify-center">
                   <button
                     onClick={downloadPDF}
-                    className="px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all flex-1 sm:flex-none"
+                    className="px-8 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all flex items-center gap-2"
                   >
                     📄 Download PDF
                   </button>
                   <button
                     onClick={() => setShowModal(false)}
-                    className="px-8 py-3 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-xl transition-all flex-1 sm:flex-none"
+                    className="px-8 py-3 bg-gray-700/50 hover:bg-gray-600 text-white font-semibold rounded-xl transition-all border border-gray-600 hover:border-gray-500"
                   >
                     Close
                   </button>
@@ -207,7 +207,6 @@ const Home = () => {
             </div>
           </>
         )}
-        
       </div>
     </div>
   );
