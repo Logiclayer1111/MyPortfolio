@@ -1,4 +1,4 @@
-# 💼 Sai Charan Suggala's Portfolio
+# 💼 Antoni Nowicki's Portfolio
 
 Welcome to my personal portfolio website! This portfolio showcases my projects, skills, and experiences. Built using **React.js**, it reflects my passion for software development, Generative AI,Machine Learning and continuous learning.
 

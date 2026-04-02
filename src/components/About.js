@@ -12,7 +12,7 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-8 md:mt-20 px-4 md:px-0">
-          Hi there! 👋 I'm Sai Charan Suggala, a passionate and versatile
+          Hi there! 👋 I'm Antoni Nowicki, a passionate and versatile
           technology enthusiast specializing in Web Development, Data Analytics,
           Machine Learning, Generative AI, and Cloud Engineering. I thrive at the
           intersection of creativity and technology, turning complex problems into
