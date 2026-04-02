@@ -143,8 +143,9 @@ const Home = () => {
             ></span>
           </h5>
           <p className="text-gray-500 py-4 max-w-md mx-auto md:mx-0">
-            I'm a Full Stack Developer with 8 years of experience designing, building, and scaling modern web applications using advanced frontend and backend technologies. 
-            Specialized in JavaScript ecosystems, scalable backend architectures, API design, and high-performance UI development across complex enterprise systems. Demonstrates strong expertise in React, Vue.js, Node.js, TypeScript, RESTful APIs, cloud deployment, and database optimization, delivering secure and maintainable applications used by thousands of users.
+             👋 I'm always excited to collaborate on innovative projects and explore
+             new opportunities in technology. Feel free to check out my portfolio, and
+             let’s create something amazing together!
           </p>
           <div>
 <button
