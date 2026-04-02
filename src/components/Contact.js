@@ -72,7 +72,7 @@ const Contact = () => {
         <div className="flex justify-center space-x-6 mt-8">
           
           <a
-            href="https://www.linkedin.com/in/saicharansuggala"
+            href="https://www.linkedin.com/in/antoni-nowicki"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-500 transition duration-300"
@@ -81,7 +81,7 @@ const Contact = () => {
           </a>
       
           <a
-            href="https://github.com/CharanSuggala26"
+            href="https://github.com/logiclayer1111"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-500 transition duration-300"
@@ -89,7 +89,7 @@ const Contact = () => {
             <FaGithub size={30} />
           </a>
                     <a
-            href="https://www.youtube.com/channel/UCWVxAShujCEJmhSDo4A7CjA"
+            href="https://www.youtube.com/channel/UCWVxAShujCEJmhSDo4A7CjAB"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-cyan-500 transition duration-300"
