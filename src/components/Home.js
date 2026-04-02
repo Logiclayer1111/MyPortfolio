@@ -13,38 +13,63 @@ const Home = () => {
 
   const downloadPDF = useCallback(async () => {
     try {
-      const { jsPDF } = await import('jspdf');
-      const html2canvas = await import('html2canvas');
+      const jsPDFModule = await import('jspdf');
+      const html2canvasModule = await import('html2canvas');
+      const jsPDF = jsPDFModule.default || jsPDFModule.jsPDF;
+      const html2canvas = html2canvasModule.default;
+      
       const element = document.getElementById('resume-content');
       if (!element) {
         alert('Resume content not found');
         return;
       }
+      
+      // Scroll to top and hide scrollbars temporarily
+      const originalScrollTop = element.scrollTop;
+      const originalOverflow = element.style.overflow;
+      element.scrollTop = 0;
+      element.style.overflow = 'hidden';
+      
       const canvas = await html2canvas(element, { 
-        scale: 2,
+        scale: 1.5,
         useCORS: true,
         allowTaint: true,
-        logging: false,
-        backgroundColor: '#111827',
+        backgroundColor: null,
+        width: element.scrollWidth,
+        height: element.scrollHeight,
+        scrollX: 0,
+        scrollY: 0,
       });
+      
+      // Restore
+      element.scrollTop = originalScrollTop;
+      element.style.overflow = originalOverflow;
+      
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF('p', 'mm', 'a4');
+      
       const pdfWidth = pdf.internal.pageSize.getWidth();
-      const imgHeight = (canvas.height * pdfWidth) / canvas.width;
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const imgWidth = pdfWidth;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      
       let heightLeft = imgHeight;
-      let position = 0;
-      pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgHeight);
-      heightLeft -= pdf.internal.pageSize.getHeight();
+      let positionY = 0;
+      
+      pdf.addImage(imgData, 'PNG', 0, positionY, imgWidth, imgHeight);
+      heightLeft -= pdfHeight;
+      
       while (heightLeft >= 0) {
-        position = heightLeft - imgHeight;
+        positionY = heightLeft - imgHeight;
         pdf.addPage();
-        pdf.addImage(imgData, 'PNG', 0, position, pdfWidth, imgHeight);
-        heightLeft -= pdf.internal.pageSize.getHeight();
+        pdf.addImage(imgData, 'PNG', 0, positionY, imgWidth, imgHeight);
+        heightLeft -= pdfHeight;
       }
+      
       pdf.save('Antoni_Nowicki_Resume.pdf');
     } catch (error) {
-      console.error('PDF generation failed:', error);
-      alert('PDF download failed. Please try again.');
+      console.error('PDF generation error:', error);
+      alert(`PDF failed: ${error.message}`);
     }
   }, []);
 
