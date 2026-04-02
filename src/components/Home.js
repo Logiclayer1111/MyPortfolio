@@ -12,13 +12,12 @@ const Home = () => {
     const typed = new Typed(typedRef.current, {
       strings: [
         "Full Stack Developer",
-        "Data Analyst",
-        "Machine Learning Engineer",
-        "Cloud Engineer",
+        "Software Engineer",
+        "Architecture",
       ],
-      typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 1000,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 2000,
       loop: true,
     });
 
