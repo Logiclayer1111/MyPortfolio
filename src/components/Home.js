@@ -12,12 +12,11 @@ const Home = () => {
     const typed = new Typed(typedRef.current, {
       strings: [
         "Full Stack Developer",
-        "Software Engineer",
-        "Architecture",
+        "Software Engineer"
       ],
       typeSpeed: 100,
       backSpeed: 100,
-      backDelay: 2000,
+      backDelay: 5000,
       loop: true,
     });
 
@@ -103,9 +102,8 @@ const Home = () => {
             ></span>
           </h5>
           <p className="text-gray-500 py-4 max-w-md mx-auto md:mx-0">
-            I have experience building and designing software Applications. Currently, I
-            love to work on web applications using technologies like React,
-            Tailwind, Next.js, and GraphQL.
+            I'm a Full Stack Developer with 8 years of experience designing, building, and scaling modern web applications using advanced frontend and backend technologies. 
+            Specialized in JavaScript ecosystems, scalable backend architectures, API design, and high-performance UI development across complex enterprise systems. Demonstrates strong expertise in React, Vue.js, Node.js, TypeScript, RESTful APIs, cloud deployment, and database optimization, delivering secure and maintainable applications used by thousands of users.
           </p>
           <div>
             <Link
@@ -114,7 +112,7 @@ const Home = () => {
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 transition-transform duration-300"
             >
-              Portfolio
+              Resume
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
