@@ -27,7 +27,7 @@ function Projects() {
       id: 2,
       src: edu,
       demo: "https://example.com",
-      code: "https://github.com/AKSHAY-CHOWDARY/Envision",
+      code: "https://github.com/logiclayer1111/Envision",
       title: "Envision",
       description: "Competency Student profile Score calculator. Enhances the learning experience for students through innovative tools.",
     },
