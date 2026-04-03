@@ -19,7 +19,7 @@ function Projects() {
       id: 1,
       src: pill,
       demo: "https://example.com",
-      code: "https://github.com/CharanSuggala26/Medicine-Dosage-Tracker",
+      code: "https://github.com/logiclayer1111/Medicine-Dosage-Tracker",
       title: "Pill-Planner",
       description: "A web application that Streamlines and tracks the Medicine Dosage. Helps users manage their medication schedules effectively.",
     },
