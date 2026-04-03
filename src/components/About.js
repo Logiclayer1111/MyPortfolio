@@ -16,14 +16,6 @@ const About = () => {
           Specialized in JavaScript ecosystems, scalable backend architectures, API design, and high-performance UI development across complex enterprise systems. 
           Demonstrates strong expertise in React, Vue.js, Node.js, TypeScript, RESTful APIs, cloud deployment, and database optimization, delivering secure and maintainable applications used by thousands of users.
         </p>
-
-        <br />
-
-        <p className="text-xl px-4 md:px-0">
-          I'm always excited to collaborate on innovative projects and explore
-          new opportunities in technology. Feel free to check out my portfolio, and
-          let’s create something amazing together!
-        </p>
       </div>
     </div>
   );
