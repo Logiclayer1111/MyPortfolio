@@ -43,7 +43,7 @@ function Projects() {
       id: 4,
       src: free,
       demo: "https://example.com",
-      code: "https://github.com/pranay65/Webathon3.0",
+      code: "https://github.com/Logiclayer1111/Webauthon",
       title: "AI Freelance Job Marketplace",
       description: "A modern, AI-powered freelance job platform designed to bridge the gap between skilled professionals and clients looking for top-tier talent. This platform streamlines the process of connecting, collaborating, and contracting, empowering freelancers.",
     },
