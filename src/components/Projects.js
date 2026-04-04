@@ -25,14 +25,6 @@ function Projects() {
     },
     {
       id: 2,
-      src: edu,
-      demo: "https://example.com",
-      code: "https://github.com/Logiclayer1111/Envision",
-      title: "Envision",
-      description: "Competency Student profile Score calculator. Enhances the learning experience for students through innovative tools.",
-    },
-    {
-      id: 3,
       src: tryon,
       demo: "https://example.com",
       code: "https://github.com/Logiclayer1111/Outfit-Assistant",
@@ -40,7 +32,7 @@ function Projects() {
       description: "AI Virtual Outfit Assistant is an innovative tool that offers outfit suggestions based on vocation and style preferences. It provides a virtual try-on experience.",
     },
     {
-      id: 4,
+      id: 3,
       src: free,
       demo: "https://example.com",
       code: "https://github.com/Logiclayer1111/Webauthon",
@@ -48,7 +40,7 @@ function Projects() {
       description: "A modern, AI-powered freelance job platform designed to bridge the gap between skilled professionals and clients looking for top-tier talent. This platform streamlines the process of connecting, collaborating, and contracting, empowering freelancers.",
     },
     {
-      id: 5,
+      id: 4,
       src: ats,
       demo: "https://example.com",
       code: "https://github.com/Logiclayer1111/Application-Tracking-System",
@@ -56,7 +48,7 @@ function Projects() {
       description: "A complete end-to-end Applicant Tracking System (ATS) powered by the Google Gemini Pro Vision API. The system intelligently analyzes your resume, compares it with a given job description, and provides personalized improvement suggestions to help align your profile with the job requirements.",
     },
         {
-      id: 6,
+      id: 5,
       src: mock,
       demo: "https://mockinterviews-4hntumcrurj43vz2fymxgi.streamlit.app/",
       code: "https://github.com/CharanSuggala26/MockInterviews",
@@ -64,15 +56,15 @@ function Projects() {
       description: "FastTrackHire is an AI-powered mock interview web application built with Python, Streamlit, and LLMs (LLaMA3-8B-8192) . It helps users simulate company-specific interview experiences by analyzing their resume and tailoring questions accordingly. FastTrackHire-makes you hire like a pro!",
     },
         {
-      id: 7,
+      id: 6,
       src: smart,
       demo: "https://example.com",
-      code: "https://github.com/CharanSuggala26/Smart_Attendance_System",
+      code: "https://github.com/Logiclayer1111/Smart_Attendance_System",
       title: "Smart Attendance System",
       description: "Smart Attendance System using OpenCV is a facial recognition-based solution that automates attendance by detecting and verifying student faces in real-time. It enhances accuracy, reduces proxy attendance, and eliminates manual entry errors for efficient and accurate attendance tracking and management.",
     },
         {
-      id: 8,
+      id: 7,
       src: link,
       demo: "https://example.com",
       code: "https://github.com/CharanSuggala26/LinkShield",
@@ -80,7 +72,7 @@ function Projects() {
       description: "The AI E-mail Phishing Detection project uses machine learning algorithms to detect and prevent email phishing attacks. It uses natural language processing to analyze the email content and identify potential phishing indicators in real time. It alerts the user if the email is potentially phishing.",
     },
     {
-      id: 9,
+      id: 8,
       src: driver,
       demo: "https://example.com",
       code: "https://github.com/CharanSuggala26/DrowsyDriverDetection",
@@ -88,7 +80,7 @@ function Projects() {
       description: "Improves road safety by alerting drivers showing signs of fatigue. It uses computer vision and machine learning to detect drowsiness in drivers. It alerts the driver if they are drowsy and helps them stay alert and safe on the road. Alarm is generated using pygame and CNN trained on 4000 images.",
     },
     {
-      id: 10,
+      id: 9,
       src: lib,
       demo: "https://example.com",
       code: "https://github.com/CharanSuggala26/library-management",
@@ -96,7 +88,7 @@ function Projects() {
       description: "A Library Management System is a digital solution that streamlines book tracking, borrowing, returns, and inventory management for efficient library operations.",
     },
     {
-      id: 11,
+      id: 10,
       src: atliq,
       demo: "https://example.com",
       code: "https://github.com/CharanSuggala26/AtliqueGrands-Data-Analysis",
@@ -104,7 +96,7 @@ function Projects() {
       description: "The AtliQ Grands Data Analysis project provides data-driven insights for the hospitality industry using Power BI and the STAR methodology. It helps businesses make informed decisions about their revenue growth.",
     },
         {
-      id: 12,
+      id: 11,
       src: insurance,
       demo: "https://example.com",
       code: "https://github.com/CharanSuggala26/Insurance-Data-Analysis",
