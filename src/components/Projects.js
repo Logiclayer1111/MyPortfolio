@@ -51,7 +51,7 @@ function Projects() {
       id: 5,
       src: ats,
       demo: "https://example.com",
-      code: "https://github.com/CharanSuggala26/Application-Tracking-System",
+      code: "https://github.com/Logiclayer1111/Application-Tracking-System",
       title: "AI Resume Scanner",
       description: "A complete end-to-end Applicant Tracking System (ATS) powered by the Google Gemini Pro Vision API. The system intelligently analyzes your resume, compares it with a given job description, and provides personalized improvement suggestions to help align your profile with the job requirements.",
     },
