@@ -16,7 +16,7 @@ function Projects() {
       id: 1,
       src: pill,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/Medicine-Dosage-Tracker",
+      code: "https://github.com/Logiclayer1111/Medicine-Dosage-Tracker",
       title: "Pill-Planner",
       description: "A web application that Streamlines and tracks the Medicine Dosage. Helps users manage their medication schedules effectively.",
     },
@@ -24,7 +24,7 @@ function Projects() {
       id: 2,
       src: tryon,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/Outfit-Assistant",
+      code: "https://github.com/Logiclayer1111/Outfit-Assistant",
       title: "AI Virtual Outfit Assistant",
       description: "AI Virtual Outfit Assistant is an innovative tool that offers outfit suggestions based on vocation and style preferences. It provides a virtual try-on experience.",
     },
@@ -32,7 +32,7 @@ function Projects() {
       id: 3,
       src: free,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/Webauthon",
+      code: "https://github.com/Logiclayer1111/Webauthon",
       title: "AI Freelance Job Marketplace",
       description: "A modern, AI-powered freelance job platform designed to bridge the gap between skilled professionals and clients looking for top-tier talent. This platform streamlines the process of connecting, collaborating, and contracting, empowering freelancers.",
     },
@@ -40,7 +40,7 @@ function Projects() {
       id: 4,
       src: ats,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/Application-Tracking-System",
+      code: "https://github.com/Logiclayer1111/Application-Tracking-System",
       title: "AI Resume Scanner",
       description: "A complete end-to-end Applicant Tracking System (ATS) powered by the Google Gemini Pro Vision API. The system intelligently analyzes your resume, compares it with a given job description, and provides personalized improvement suggestions to help align your profile with the job requirements.",
     },
@@ -48,7 +48,7 @@ function Projects() {
       id: 5,
       src: mock,
       demo: "https://mockinterviews-4hntumcrurj43vz2fymxgi.streamlit.app/",
-      GitHub: "https://github.com/Logiclayer1111/MockInterviews",
+      code: "https://github.com/Logiclayer1111/MockInterviews",
       title: "AI-Powered Mock Interview",
       description: "FastTrackHire is an AI-powered mock interview web application built with Python, Streamlit, and LLMs (LLaMA3-8B-8192) . It helps users simulate company-specific interview experiences by analyzing their resume and tailoring questions accordingly. FastTrackHire-makes you hire like a pro!",
     },
@@ -56,7 +56,7 @@ function Projects() {
       id: 6,
       src: smart,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/Smart_Attendance_System",
+      code: "https://github.com/Logiclayer1111/Smart_Attendance_System",
       title: "Smart Attendance System",
       description: "Smart Attendance System using OpenCV is a facial recognition-based solution that automates attendance by detecting and verifying student faces in real-time. It enhances accuracy, reduces proxy attendance, and eliminates manual entry errors for efficient and accurate attendance tracking and management.",
     },
@@ -64,7 +64,7 @@ function Projects() {
       id: 7,
       src: link,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/LinkShield",
+      code: "https://github.com/Logiclayer1111/LinkShield",
       title: "AI E-mail Phishing",
       description: "The AI E-mail Phishing Detection project uses machine learning algorithms to detect and prevent email phishing attacks. It uses natural language processing to analyze the email content and identify potential phishing indicators in real time. It alerts the user if the email is potentially phishing.",
     },
@@ -72,7 +72,7 @@ function Projects() {
       id: 8,
       src: driver,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/DrowsyDriverDetection",
+      code: "https://github.com/Logiclayer1111/DrowsyDriverDetection",
       title: "Drowsy Driving Detection",
       description: "Improves road safety by alerting drivers showing signs of fatigue. It uses computer vision and machine learning to detect drowsiness in drivers. It alerts the driver if they are drowsy and helps them stay alert and safe on the road. Alarm is generated using pygame and CNN trained on 4000 images.",
     },
@@ -80,7 +80,7 @@ function Projects() {
       id: 9,
       src: lib,
       demo: "https://example.com",
-      GitHub: "https://github.com/Logiclayer1111/library-management",
+      code: "https://github.com/Logiclayer1111/library-management",
       title: "Library Management System",
       description: "A Library Management System is a digital solution that streamlines book tracking, borrowing, returns, and inventory management for efficient library operations.",
     }
@@ -205,7 +205,7 @@ function ProjectCard({ src, demo, code, title, description }) {
               rel="noopener noreferrer"
               className="w-1/2 px-4 py-2 mx-2 bg-gradient-to-r from-gray-700 to-gray-900 border border-gray-600 text-center rounded-lg text-white font-medium hover:scale-105 duration-200"
             >
-              Code
+              GitHub
             </a>
           </div>
         </div>
