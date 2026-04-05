@@ -51,7 +51,7 @@ function Projects() {
       id: 5,
       src: mock,
       demo: "https://mockinterviews-4hntumcrurj43vz2fymxgi.streamlit.app/",
-      code: "https://github.com/CharanSuggala26/MockInterviews",
+      code: "https://github.com/Logiclayer1111/MockInterviews",
       title: "AI-Powered Mock Interview",
       description: "FastTrackHire is an AI-powered mock interview web application built with Python, Streamlit, and LLMs (LLaMA3-8B-8192) . It helps users simulate company-specific interview experiences by analyzing their resume and tailoring questions accordingly. FastTrackHire-makes you hire like a pro!",
     },
