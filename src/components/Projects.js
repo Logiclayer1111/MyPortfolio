@@ -1,16 +1,13 @@
 import React, { useState, useRef } from "react";
 import pill from "../assets/pillimg.jpg";
-import edu from "../assets/education-system-students.jpg";
 import driver from "../assets/drowsy.jpeg";
 import tryon from "../assets/tryon.png";
-import atliq from "../assets/atliq.jpg";
 import lib from "../assets/lib.jpeg";
 import ats from "../assets/ats.webp";
 import free from "../assets/free.jpg";
 import link from "../assets/link.jpg";
 import smart from "../assets/smart.jpg";
 import mock from "../assets/mock.png";
-import insurance from "../assets/insurance.png";
 
 function Projects() {
 
