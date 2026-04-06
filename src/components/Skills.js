@@ -1,4 +1,4 @@
-import { SiReact, SiJavascript, SiNodedotjs, SiTailwindcss, SiMongodb, SiExpress, SiPython, SiCplusplus, SiAmazon, SiMysql, SiTableau, SiFirebase, SiStreamlit, SiOpencv, SiTensorflow, SiDeepnote, SiHtml5 } from "react-icons/si";
+import { SiReact, SiJavascript, SiNodedotjs, SiTailwindcss, SiMongodb, SiExpress, SiPython, SiCplusplus, SiAmazon, SiMysql, SiTableau, SiFirebase, SiStreamlit, SiOpencv, SiTensorflow, SiDeepnote, SiHtml5,SiNextdotjs,SiVuedotjs,SiGraphql,SiPostgresql,SiSupabase,SiTypescript,SiNuxtdotjs,SiRedux,SiRedis,SiWordpress,SiDjango,SiPhp,SiRust} from "react-icons/si";
 import { TbBrain } from "react-icons/tb"; // For Machine Learning
 import { GiArtificialIntelligence } from "react-icons/gi"; // For Generative AI
 
