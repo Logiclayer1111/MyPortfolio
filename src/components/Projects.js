@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { FaGithub } from "react-icons/fa";
 import pill from "../assets/pillimg.jpg";
 import driver from "../assets/drowsy.jpeg";
 import tryon from "../assets/tryon.png";
@@ -224,8 +225,9 @@ function ProjectCard({ src, github, title, description }) {
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-1/2 px-4 py-2 mx-2 bg-gradient-to-r from-gray-700 to-gray-900 border border-gray-600 text-center rounded-lg text-white font-medium hover:scale-105 duration-200"
+              className="w-1/2 px-4 py-2 mx-2 bg-gradient-to-r from-gray-700 to-gray-900 border border-gray-600 rounded-lg text-white font-medium hover:scale-105 duration-200 inline-flex items-center justify-center gap-2"
             >
+              <FaGithub className="text-lg" />
               GitHub
             </a>
           </div>
