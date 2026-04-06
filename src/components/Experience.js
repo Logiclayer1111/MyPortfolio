@@ -162,7 +162,8 @@ const Experience = () => {
           <div className="flex justify-center">
             <p className="inline border-b-4 border-cyan-500 pb-2 text-3xl font-bold">Education</p>
           </div>
-          <div className="mt-8 grid max-w-4xl gap-6">
+          <div className="mt-8 ml-2 pl-8 md:ml-6 md:pl-12">
+            <div className="grid max-w-4xl gap-6">
             {education.map(({ id, degree, school, location, period, summary }) => (
               <article
                 key={id}
@@ -183,6 +184,7 @@ const Experience = () => {
                 </div>
               </article>
             ))}
+            </div>
           </div>
         </div>
       </div>
