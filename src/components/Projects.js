@@ -10,71 +10,79 @@ import smart from "../assets/smart.jpg";
 import mock from "../assets/mock.png";
 
 function Projects() {
-
   const portfolios = [
     {
       id: 1,
       src: pill,
       github: "https://github.com/Logiclayer1111/Medicine-Dosage-Tracker",
       title: "Pill-Planner",
-      description: "A web application that Streamlines and tracks the Medicine Dosage. Helps users manage their medication schedules effectively.",
+      description:
+        "A web application that Streamlines and tracks the Medicine Dosage. Helps users manage their medication schedules effectively.",
     },
     {
       id: 2,
       src: tryon,
       github: "https://github.com/Logiclayer1111/Outfit-Assistant",
       title: "AI Virtual Outfit Assistant",
-      description: "AI Virtual Outfit Assistant is an innovative tool that offers outfit suggestions based on vocation and style preferences. It provides a virtual try-on experience.",
+      description:
+        "AI Virtual Outfit Assistant is an innovative tool that offers outfit suggestions based on vocation and style preferences. It provides a virtual try-on experience.",
     },
     {
       id: 3,
       src: free,
       github: "https://github.com/Logiclayer1111/Webauthon",
       title: "AI Freelance Job Marketplace",
-      description: "A modern, AI-powered freelance job platform designed to bridge the gap between skilled professionals and clients looking for top-tier talent. This platform streamlines the process of connecting, collaborating, and contracting, empowering freelancers.",
+      description:
+        "A modern, AI-powered freelance job platform designed to bridge the gap between skilled professionals and clients looking for top-tier talent. This platform streamlines the process of connecting, collaborating, and contracting, empowering freelancers.",
     },
     {
       id: 4,
       src: ats,
       github: "https://github.com/Logiclayer1111/Application-Tracking-System",
       title: "AI Resume Scanner",
-      description: "A complete end-to-end Applicant Tracking System (ATS) powered by the Google Gemini Pro Vision API. The system intelligently analyzes your resume, compares it with a given job description, and provides personalized improvement suggestions to help align your profile with the job requirements.",
+      description:
+        "A complete end-to-end Applicant Tracking System (ATS) powered by the Google Gemini Pro Vision API. The system intelligently analyzes your resume, compares it with a given job description, and provides personalized improvement suggestions to help align your profile with the job requirements.",
     },
-        {
+    {
       id: 5,
       src: mock,
       github: "https://github.com/Logiclayer1111/MockInterviews",
       title: "AI-Powered Mock Interview",
-      description: "FastTrackHire is an AI-powered mock interview web application built with Python, Streamlit, and LLMs (LLaMA3-8B-8192) . It helps users simulate company-specific interview experiences by analyzing their resume and tailoring questions accordingly. FastTrackHire-makes you hire like a pro!",
+      description:
+        "FastTrackHire is an AI-powered mock interview web application built with Python, Streamlit, and LLMs (LLaMA3-8B-8192) . It helps users simulate company-specific interview experiences by analyzing their resume and tailoring questions accordingly. FastTrackHire-makes you hire like a pro!",
     },
-        {
+    {
       id: 6,
       src: smart,
       github: "https://github.com/Logiclayer1111/Smart_Attendance_System",
       title: "Smart Attendance System",
-      description: "Smart Attendance System using OpenCV is a facial recognition-based solution that automates attendance by detecting and verifying student faces in real-time. It enhances accuracy, reduces proxy attendance, and eliminates manual entry errors for efficient and accurate attendance tracking and management.",
+      description:
+        "Smart Attendance System using OpenCV is a facial recognition-based solution that automates attendance by detecting and verifying student faces in real-time. It enhances accuracy, reduces proxy attendance, and eliminates manual entry errors for efficient and accurate attendance tracking and management.",
     },
-        {
+    {
       id: 7,
       src: link,
       github: "https://github.com/Logiclayer1111/LinkShield",
       title: "AI E-mail Phishing",
-      description: "The AI E-mail Phishing Detection project uses machine learning algorithms to detect and prevent email phishing attacks. It uses natural language processing to analyze the email content and identify potential phishing indicators in real time. It alerts the user if the email is potentially phishing.",
+      description:
+        "The AI E-mail Phishing Detection project uses machine learning algorithms to detect and prevent email phishing attacks. It uses natural language processing to analyze the email content and identify potential phishing indicators in real time. It alerts the user if the email is potentially phishing.",
     },
     {
       id: 8,
       src: driver,
       github: "https://github.com/Logiclayer1111/DrowsyDriverDetection",
       title: "Drowsy Driving Detection",
-      description: "Improves road safety by alerting drivers showing signs of fatigue. It uses computer vision and machine learning to detect drowsiness in drivers. It alerts the driver if they are drowsy and helps them stay alert and safe on the road. Alarm is generated using pygame and CNN trained on 4000 images.",
+      description:
+        "Improves road safety by alerting drivers showing signs of fatigue. It uses computer vision and machine learning to detect drowsiness in drivers. It alerts the driver if they are drowsy and helps them stay alert and safe on the road. Alarm is generated using pygame and CNN trained on 4000 images.",
     },
     {
       id: 9,
       src: lib,
       github: "https://github.com/Logiclayer1111/library-management",
       title: "Library Management System",
-      description: "A Library Management System is a digital solution that streamlines book tracking, borrowing, returns, and inventory management for efficient library operations.",
-    }
+      description:
+        "A Library Management System is a digital solution that streamlines book tracking, borrowing, returns, and inventory management for efficient library operations.",
+    },
   ];
 
   return (
@@ -92,7 +100,7 @@ function Projects() {
 
         <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-4 sm:px-0 items-stretch">
           {portfolios.map(({ id, src, github, title, description }) => (
-            <ProjectCard 
+            <ProjectCard
               key={id}
               src={src}
               github={github}
@@ -102,12 +110,12 @@ function Projects() {
           ))}
         </div>
       </div>
-      
+
       <style jsx global>{`
         .perspective-1000 {
           perspective: 1000px;
         }
-        
+
         .transform-style-3d {
           transform-style: preserve-3d;
         }
@@ -128,10 +136,10 @@ function ProjectCard({ src, github, title, description }) {
       const rect = cardRef.current.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
       const y = (e.clientY - rect.top) / rect.height;
-      
-      const rotateX = (y - 0.5) * 20; 
-      const rotateY = (0.5 - x) * 20; 
-      
+
+      const rotateX = (y - 0.5) * 20;
+      const rotateY = (0.5 - x) * 20;
+
       setRotation({ x: rotateX, y: rotateY });
     }
   };
@@ -143,7 +151,8 @@ function ProjectCard({ src, github, title, description }) {
   useEffect(() => {
     if (descriptionRef.current) {
       setShowToggle(
-        descriptionRef.current.scrollHeight > descriptionRef.current.clientHeight
+        descriptionRef.current.scrollHeight >
+          descriptionRef.current.clientHeight,
       );
     }
   }, [description]);
@@ -162,16 +171,11 @@ function ProjectCard({ src, github, title, description }) {
         }}
       >
         <div className="transform-style-3d flex h-full flex-col bg-gray-900 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-500/20 duration-300">
-
           <div
             className="transform-style-3d w-full"
             style={{ transform: `translateZ(40px)` }}
           >
-            <img
-              src={src}
-              alt={title}
-              className="w-full h-48 object-cover"
-            />
+            <img src={src} alt={title} className="w-full h-48 object-cover" />
           </div>
 
           <div
