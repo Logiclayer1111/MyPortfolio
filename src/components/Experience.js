@@ -94,9 +94,9 @@ const Experience = () => {
       name="experience"
       className="w-full bg-gradient-to-b from-black via-gray-900 to-gray-800 py-16 text-white"
     >
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col px-4">
+      <div className="mx-auto flex w-full max-w-screen-lg flex-col px-4">
         <div className="mb-12 max-w-3xl">
-          <p className="inline border-b-4 border-cyan-500 pb-2 text-4xl font-bold">Experience</p>
+          <p className="inline border-b-4 border-cyan-500 pb-2 pl-5 text-4xl font-bold">Experience</p>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-300">
             A timeline of the roles, systems, and teams that shaped my work as a full stack developer.
           </p>
@@ -158,9 +158,9 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="mt-16 max-w-4xl">
-          <p className="inline border-b-4 border-cyan-500 pb-2 text-3xl font-bold">Education</p>
-          <div className="mt-8 grid gap-6">
+        <div className="mt-16 w-full">
+          <p className="inline border-b-4 border-cyan-500 pb-2 pl-5 text-3xl font-bold">Education</p>
+          <div className="mt-8 grid max-w-4xl gap-6">
             {education.map(({ id, degree, school, location, period, summary }) => (
               <article
                 key={id}
