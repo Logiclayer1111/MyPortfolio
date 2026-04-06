@@ -76,6 +76,18 @@ const experiences = [
   },
 ];
 
+const education = [
+  {
+    id: 1,
+    degree: "Bachelor's Degree in Computer Science",
+    school: "Warsaw University of Technology",
+    location: "Warsaw, Poland",
+    period: "Oct 2015 - Jul 2018",
+    summary:
+      "Built a strong computer science foundation across software engineering, algorithms, and systems design while preparing for full stack product work.",
+  },
+];
+
 const Experience = () => {
   return (
     <section
@@ -144,6 +156,32 @@ const Experience = () => {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-16 max-w-4xl">
+          <p className="inline border-b-4 border-cyan-500 pb-2 text-3xl font-bold">Education</p>
+          <div className="mt-8 grid gap-6">
+            {education.map(({ id, degree, school, location, period, summary }) => (
+              <article
+                key={id}
+                className="overflow-hidden rounded-2xl border border-gray-700/80 bg-gray-900/70 shadow-2xl shadow-black/30 backdrop-blur-sm"
+              >
+                <div className="border-b border-gray-700/80 bg-gradient-to-r from-cyan-500/10 via-slate-900 to-transparent px-6 py-6">
+                  <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
+                    <div>
+                      <p className="text-sm uppercase tracking-[0.25em] text-cyan-300">{period}</p>
+                      <h3 className="mt-2 text-2xl font-bold text-white md:text-3xl">{degree}</h3>
+                      <p className="mt-1 text-lg text-gray-300">{school}</p>
+                    </div>
+                    <div className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-100">
+                      {location}
+                    </div>
+                  </div>
+                  <p className="mt-5 max-w-3xl text-base leading-7 text-gray-300">{summary}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>
