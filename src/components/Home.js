@@ -186,12 +186,12 @@ const Home = () => {
         </div>
 
         <div className="mt-8 md:mt-0 md:ml-10">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 p-1 overflow-hidden">
+          <div className="relative w-[19.2rem] h-[19.2rem] md:w-96 md:h-96 p-1 overflow-hidden">
             <MovingBorder duration={3000}>
               <img
                 src={pic}
                 alt="Profile"
-                className="w-4/5 h-full object-cover rounded-full relative z-10"
+                className="w-full h-full object-cover rounded-full relative z-10"
               />
             </MovingBorder>
           </div>
