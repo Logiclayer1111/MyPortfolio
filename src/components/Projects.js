@@ -90,7 +90,7 @@ function Projects() {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-4 sm:px-0">
+        <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-8 px-4 sm:px-0 items-stretch">
           {portfolios.map(({ id, src, github, title, description }) => (
             <ProjectCard 
               key={id}
@@ -140,17 +140,17 @@ function ProjectCard({ src, github, title, description }) {
   return (
     <div
       ref={cardRef}
-      className="perspective-1000 mb-12"
+      className="perspective-1000 h-full"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className="relative transition-transform duration-200 ease-out transform-style-3d"
+        className="relative h-full transition-transform duration-200 ease-out transform-style-3d"
         style={{
           transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
         }}
       >
-        <div className="transform-style-3d bg-gray-900 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-500/20 duration-300">
+        <div className="transform-style-3d flex h-full flex-col bg-gray-900 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-500/20 duration-300">
 
           <div
             className="transform-style-3d w-full"
@@ -171,7 +171,7 @@ function ProjectCard({ src, github, title, description }) {
           </div>
 
           <div
-            className="transform-style-3d px-6 py-2"
+            className="transform-style-3d flex-1 px-6 py-2"
             style={{ transform: `translateZ(50px)` }}
           >
             <p className="text-gray-300 text-sm">{description}</p>
