@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import pill from "../assets/pillimg.jpg";
 import driver from "../assets/drowsy.jpeg";
 import tryon from "../assets/tryon.png";
@@ -118,7 +118,10 @@ function Projects() {
 
 function ProjectCard({ src, github, title, description }) {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [showToggle, setShowToggle] = useState(false);
   const cardRef = useRef(null);
+  const descriptionRef = useRef(null);
 
   const handleMouseMove = (e) => {
     if (cardRef.current) {
@@ -136,6 +139,14 @@ function ProjectCard({ src, github, title, description }) {
   const handleMouseLeave = () => {
     setRotation({ x: 0, y: 0 });
   };
+
+  useEffect(() => {
+    if (descriptionRef.current) {
+      setShowToggle(
+        descriptionRef.current.scrollHeight > descriptionRef.current.clientHeight
+      );
+    }
+  }, [description]);
 
   return (
     <div
@@ -174,7 +185,31 @@ function ProjectCard({ src, github, title, description }) {
             className="transform-style-3d flex-1 px-6 py-2"
             style={{ transform: `translateZ(50px)` }}
           >
-            <p className="text-gray-300 text-sm">{description}</p>
+            <p
+              ref={descriptionRef}
+              className="text-gray-300 text-sm"
+              style={
+                isExpanded
+                  ? undefined
+                  : {
+                      display: "-webkit-box",
+                      WebkitLineClamp: 4,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
+                    }
+              }
+            >
+              {description}
+            </p>
+            {showToggle && (
+              <button
+                type="button"
+                onClick={() => setIsExpanded((prev) => !prev)}
+                className="mt-3 text-sm font-medium text-cyan-400 transition-colors duration-200 hover:text-cyan-300"
+              >
+                {isExpanded ? "Less" : "More"}
+              </button>
+            )}
           </div>
 
           <div
