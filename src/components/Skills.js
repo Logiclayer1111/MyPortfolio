@@ -1,4 +1,4 @@
-import { SiReact, SiJavascript, SiNodedotjs, SiTailwindcss, SiMongodb, SiExpress, SiPython, SiCplusplus, SiAmazon, SiMysql, SiTableau, SiFirebase, SiStreamlit, SiOpencv, SiTensorflow, SiDeepnote, SiHtml5,SiNextdotjs,SiVuedotjs,SiGraphql,SiPostgresql,SiSupabase,SiTypescript,SiNuxtdotjs,SiRedux,SiRedis,SiWordpress,SiDjango,SiPhp,SiRust} from "react-icons/si";
+import { SiReact, SiJavascript, SiNodedotjs, SiTailwindcss, SiMongodb, SiExpress, SiPython, SiCplusplus, SiAmazon, SiMysql, SiTableau, SiFirebase, SiStreamlit, SiOpencv, SiTensorflow, SiDeepnote, SiHtml5,SiNextdotjs,SiVuedotjs, SiGraphql,SiPostgresql,SiSupabase,SiTypescript,SiNuxtdotjs,SiRedux,SiRedis,SiWordpress,SiDjango,SiPhp,SiRust} from "react-icons/si";
 import { TbBrain } from "react-icons/tb"; // For Machine Learning
 import { GiArtificialIntelligence } from "react-icons/gi"; // For Generative AI
 
@@ -25,6 +25,19 @@ const techs = [
   {id:18, title:"Tensorflow", style:"shadow-pink-400", icon:<SiTensorflow />},
   {id : 19,title:"Deeplearning", style:"shadow-red-500", icon:<SiDeepnote />},
   {id : 20,title:"HTML/CSS", style:"shadow-green-500", icon:<SiHtml5 />},
+  {id : 21,title:"Next.js", style:"shadow-gray-500", icon:<SiNextdotjs />},
+  {id : 22,title:"Vue.js", style:"shadow-green-500", icon:<SiVuedotjs />},
+  {id : 23,title:"GraphQL", style:"shadow-pink-500", icon:<SiGraphql />},
+  {id : 24,title:"PostgreSQL", style:"shadow-blue-500", icon:<SiPostgresql />},
+  {id : 25,title:"Supabase", style:"shadow-green-500", icon:<SiSupabase />},
+  {id : 26,title:"TypeScript", style:"shadow-blue-500", icon:<SiTypescript />},
+  {id : 27,title:"Nuxt.js", style:"shadow-green-500", icon:<SiNuxtdotjs />},
+  {id : 28,title:"Redux", style:"shadow-orange-500", icon:<SiRedux />},
+  {id : 29,title:"Redis", style:"shadow-red-500", icon:<SiRedis />},
+  {id : 30,title:"WordPress", style:"shadow-blue-500", icon:<SiWordpress />},
+  {id : 31,title:"Django", style:"shadow-green-500", icon:<SiDjango />},
+  {id : 32,title:"PHP", style:"shadow-blue-500", icon:<SiPhp />},
+  {id : 33,title:"Rust", style:"shadow-orange-500", icon:<SiRust />},
 ];
 
 
