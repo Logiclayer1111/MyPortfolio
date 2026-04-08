@@ -21,7 +21,6 @@ Welcome to my personal portfolio website! This portfolio showcases my projects, 
 - Responsive design for all devices
 - Project gallery with live previews and GitHub links
 - Contact form with real-time email delivery
-- Certifications 
 - Skills and Technologies
 
 
