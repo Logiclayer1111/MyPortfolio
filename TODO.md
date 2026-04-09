@@ -1,18 +1,9 @@
-# Resume Modal Implementation TODO
+# Netlify Build Fix TODO
 
-## Steps to Complete:
+## Approved Plan Steps:
 
-### 1. [ ] Install dependencies
-`npm install jspdf html2canvas`
+- [x] 1. Edit src/components/Home.js: Remove unused Link import\n- [x] 2. Edit package.json: Update browserslist
+- [x] 3. Test: npm run build (local build successful)
+- [x] 4. Complete: Verify Netlify deploys successfully
 
-### 2. [x] Create `src/resume.js`
-- React component with formatted resume JSX from docx content.
-
-### 3. [x] Update `src/components/Home.js`
-- Add `useState` for modal visibility.
-- Change Resume button to onClick.
-- Add Modal JSX with Resume component.
-- Add PDF download function using jsPDF/html2canvas.
-
-✅ Task completed! Resume modal fully functional with PDF download.
-
+Progress will be updated after each step.

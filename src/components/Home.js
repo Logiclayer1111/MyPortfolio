@@ -1,10 +1,15 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
+
 import pic from "../assets/portpic.jpg";
 import Resume from "../resume";
 import Typed from "typed.js";
-import { motion, useAnimationFrame, useMotionTemplate, useMotionValue } from "framer-motion";
+import {
+  motion,
+  useAnimationFrame,
+  useMotionTemplate,
+  useMotionValue,
+} from "framer-motion";
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -13,24 +18,24 @@ const Home = () => {
 
   const downloadPDF = useCallback(async () => {
     try {
-      const jsPDFModule = await import('jspdf');
-      const html2canvasModule = await import('html2canvas');
+      const jsPDFModule = await import("jspdf");
+      const html2canvasModule = await import("html2canvas");
       const jsPDF = jsPDFModule.default || jsPDFModule.jsPDF;
       const html2canvas = html2canvasModule.default;
-      
-      const element = document.getElementById('resume-content');
+
+      const element = document.getElementById("resume-content");
       if (!element) {
-        alert('Resume content not found');
+        alert("Resume content not found");
         return;
       }
-      
+
       // Scroll to top and hide scrollbars temporarily
       const originalScrollTop = element.scrollTop;
       const originalOverflow = element.style.overflow;
       element.scrollTop = 0;
-      element.style.overflow = 'hidden';
-      
-      const canvas = await html2canvas(element, { 
+      element.style.overflow = "hidden";
+
+      const canvas = await html2canvas(element, {
         scale: 1.5,
         useCORS: true,
         allowTaint: true,
@@ -40,46 +45,42 @@ const Home = () => {
         scrollX: 0,
         scrollY: 0,
       });
-      
+
       // Restore
       element.scrollTop = originalScrollTop;
       element.style.overflow = originalOverflow;
-      
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      
+
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF("p", "mm", "a4");
+
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
       const imgWidth = pdfWidth;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      
+
       let heightLeft = imgHeight;
       let positionY = 0;
-      
-      pdf.addImage(imgData, 'PNG', 0, positionY, imgWidth, imgHeight);
+
+      pdf.addImage(imgData, "PNG", 0, positionY, imgWidth, imgHeight);
       heightLeft -= pdfHeight;
-      
+
       while (heightLeft >= 0) {
         positionY = heightLeft - imgHeight;
         pdf.addPage();
-        pdf.addImage(imgData, 'PNG', 0, positionY, imgWidth, imgHeight);
+        pdf.addImage(imgData, "PNG", 0, positionY, imgWidth, imgHeight);
         heightLeft -= pdfHeight;
       }
-      
-      pdf.save('Antoni_Nowicki_Resume.pdf');
+
+      pdf.save("Antoni_Nowicki_Resume.pdf");
     } catch (error) {
-      console.error('PDF generation error:', error);
+      console.error("PDF generation error:", error);
       alert(`PDF failed: ${error.message}`);
     }
   }, []);
 
-
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: [
-        "Full Stack Developer",
-        "Software Engineer"
-      ],
+      strings: ["Full Stack Developer", "Software Engineer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 5000,
@@ -132,7 +133,7 @@ const Home = () => {
             fill="none"
             width="100%"
             height="100%"
-            rx="9999" 
+            rx="9999"
             ry="9999"
             ref={pathRef}
           />
@@ -168,12 +169,12 @@ const Home = () => {
             ></span>
           </h5>
           <p className="text-gray-500 py-4 max-w-md mx-auto md:mx-0">
-             👋 I'm always excited to collaborate on innovative projects and explore
-             new opportunities in technology. Feel free to check out my portfolio, and
-             let’s create something amazing together!
+            👋 I'm always excited to collaborate on innovative projects and
+            explore new opportunities in technology. Feel free to check out my
+            portfolio, and let’s create something amazing together!
           </p>
           <div>
-<button
+            <button
               onClick={() => setShowModal(true)}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 transition-transform duration-300"
             >
@@ -200,9 +201,11 @@ const Home = () => {
         {/* Resume Modal */}
         {showModal && (
           <>
-            <div 
+            <div
               className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-              onClick={(e) => e.currentTarget === e.target && setShowModal(false)}
+              onClick={(e) =>
+                e.currentTarget === e.target && setShowModal(false)
+              }
             >
               <div className="bg-gray-900 border border-gray-700 rounded-3xl p-8 max-w-6xl max-h-[90vh] w-full mx-4 relative shadow-2xl overflow-hidden">
                 <button
@@ -212,7 +215,10 @@ const Home = () => {
                 >
                   ×
                 </button>
-                <div id="resume-content" className="max-h-[70vh] overflow-y-auto pb-20">
+                <div
+                  id="resume-content"
+                  className="max-h-[70vh] overflow-y-auto pb-20"
+                >
                   <Resume />
                 </div>
                 <div className="sticky bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/95 to-transparent pt-8 mt-8 pb-8 border-t border-gray-700 flex gap-4 justify-center">
