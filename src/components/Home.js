@@ -80,7 +80,7 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ["Full Stack Developer", "Software Engineer"],
+      strings: ["Full Stack Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 5000,
